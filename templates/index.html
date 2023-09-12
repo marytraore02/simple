@@ -13,14 +13,58 @@
 </head>
 <body>
     <div class="container">
+        <!--Header-->
         <div class="well text-center">
             <h1>Python Flask CRUD Web Application Development</h1>
         </div>
+        <!--Header-->
+
+        <!--Content-->
+        <div class="container">
+            <div class="row">
+                <div class="col md-12">
+                    <h2>
+                        Student List
+                        <button type="button" class="btn btn-success pull-right" data-toggle="modal" data-target="#mymodal">
+                            Add Student Data
+                        </button>
+                    </h2>
+
+                    <table class="table table-striped">
+                        <tr>
+                            <th>Serial</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>01</td>
+                            <td>Parwiz</td>
+                            <td>par@gmail.com</td>
+                            <td>008888265536</td>
+                            <td>
+                                <a href="" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#modaledit">
+                                    Edit
+                                </a>
+                                <a href="" class="btn btn-danger btn-xs" onclick="return confirm('Are you sure to delete ?')">
+                                    Delete
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--Content-->
+
+        <!--Footer-->
         <div class="well">
             <h3>Website:www.parwizforogh.com
                 <span class="pull-right">Like Us:www.facebook.com</span>
             </h3>
         </div>
+        <!--Footer-->
     </div>
 </body>
 </html>
